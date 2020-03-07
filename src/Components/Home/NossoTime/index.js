@@ -53,12 +53,14 @@ const NossoTime = () => {
       </Description>
       <Cards>
         {infoCard.map(item => {
-          <Card>
-            <Image src={item.image} />
-            <TitleCard>{item.name}</TitleCard>
-            <Specialization>{item.specialization}</Specialization>
-            <Number>{item.telephone}</Number>
-          </Card>;
+          return (
+            <Card>
+              <Image src={item.image} />
+              <TitleCard>{item.name}</TitleCard>
+              <Specialization>{item.specialization}</Specialization>
+              <Number>{item.telephone}</Number>
+            </Card>
+          );
         })}
       </Cards>
     </Container>
