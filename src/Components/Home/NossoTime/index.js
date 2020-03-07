@@ -4,39 +4,41 @@ import {
   Container,
   Title,
   Description,
+  WrapContent,
+  WrapCardContent,
   Cards,
   Card,
   Image,
   TitleCard,
-  Specialization,
-  Number,
+  DescriptionCard,
+  WrapInfo,
 } from './style';
 
 const infoCard = [
   {
-    name: 'Antonio',
-    specialization: 'Financeiro',
+    name: 'Teste',
+    specialization: ['Financeiro'],
     image:
       'https://www.rochadvogados.com.br/wp-content/uploads/2019/01/advogado-rafael-223x300.jpg',
     telephone: '(79) 99999-9999',
   },
   {
-    name: 'Antonio',
-    specialization: 'Financeiro',
+    name: 'Teste',
+    specialization: ['Financeiro'],
     image:
       'https://www.rochadvogados.com.br/wp-content/uploads/2019/01/advogado-rafael-223x300.jpg',
     telephone: '(79) 99999-9999',
   },
   {
-    name: 'Antonio',
-    specialization: 'Financeiro',
+    name: 'Teste',
+    specialization: ['Financeiro'],
     image:
       'https://www.rochadvogados.com.br/wp-content/uploads/2019/01/advogado-rafael-223x300.jpg',
     telephone: '(79) 99999-9999',
   },
   {
-    name: 'Antonio',
-    specialization: 'Financeiro',
+    name: 'Teste',
+    specialization: ['Financeiro'],
     image:
       'https://www.rochadvogados.com.br/wp-content/uploads/2019/01/advogado-rafael-223x300.jpg',
     telephone: '(79) 99999-9999',
@@ -46,19 +48,27 @@ const infoCard = [
 const NossoTime = () => {
   return (
     <Container>
-      <Title>Nosso Time</Title>
-      <Description>
-        Nosso time está sempre pronto e capacitado para atender as suas
-        necessidades. Apenas os melhores do mercado!
-      </Description>
+      <WrapInfo>
+        <Title>Nosso Time</Title>
+        <Description>
+          Nosso time está sempre pronto e capacitado para atender as suas
+          necessidades. Apenas os melhores do mercado!
+        </Description>
+      </WrapInfo>
       <Cards>
-        {infoCard.map(item => {
+        {infoCard.map((item, index) => {
           return (
-            <Card>
+            <Card key={index}>
               <Image src={item.image} />
-              <TitleCard>{item.name}</TitleCard>
-              <Specialization>{item.specialization}</Specialization>
-              <Number>{item.telephone}</Number>
+              <WrapCardContent>
+                <WrapContent>
+                  <TitleCard>{item.name}</TitleCard>
+                  {item.specialization.map((item, index) => (
+                    <DescriptionCard key={index}>{item}</DescriptionCard>
+                  ))}
+                  <DescriptionCard>{item.telephone}</DescriptionCard>
+                </WrapContent>
+              </WrapCardContent>
             </Card>
           );
         })}

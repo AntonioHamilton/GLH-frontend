@@ -7,8 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     html, body, #root, .App {
         height: 100%;
-        background-color: #000000;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
+        background-color: #aaa;
+        color: black;
+        font-family: 'Poppins', sans-serif;
     }
 `;
