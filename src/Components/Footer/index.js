@@ -9,6 +9,7 @@ import {
   Image,
   TituloItem,
   ContentMiddle,
+  ItemMiddle,
 } from './style';
 
 const Footer = () => {
