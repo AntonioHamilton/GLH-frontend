@@ -41,7 +41,7 @@ export const Divisor = styled.h2`
   text-align: center;
 `;
 export const Logo = styled.img`
-  widht: 100px;
+  width: 100px;
   height: 75px;
   margin-left: 150px;
 `;
