@@ -7,18 +7,16 @@ export const Container = styled.div`
   height: 75px;
   justify-content: space-between;
   display: flex;
-  padding: 0px 9vw;
-  top: 0;
 `;
 
 export const DivText = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 150px;
 `;
 
 export const Text = styled.a`
-  text-decoration: none;
   font-weight: bold;
   color: #000;
   background-color: #fff;
@@ -43,5 +41,7 @@ export const Divisor = styled.h2`
   text-align: center;
 `;
 export const Logo = styled.img`
+  widht: 100px;
   height: 75px;
+  margin-left: 150px;
 `;
