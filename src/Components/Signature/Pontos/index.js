@@ -72,7 +72,7 @@ const Pontos = () => {
             }}
             key={index}
           >
-            <QtdPontos>{item.qtd_pontos} pontos</QtdPontos>
+            <QtdPontos>{item.qtd_pontos}</QtdPontos>
             <Servico>{item.servico}</Servico>
           </div>
         ))}
