@@ -25,10 +25,50 @@ const dadosPlano = [
     valor_mensal: 'R$ 1950,00',
     valor_ponto: 'R$ 390,00',
   },
+  {
+    nome: 'Pacote Camponês',
+    descricao:
+      'Pode até parecer um pacote fraco, mas acredite, ele está acima do bardo. Suas principais habilidades são: se esconder de goblins e aprender bastante sobre startups',
+    qtd_pontos: '7 pontos por mês',
+    valor_mensal: 'R$ 2695,00',
+    valor_ponto: 'R$ 385,00',
+  },
+  {
+    nome: 'Pacote Mago',
+    descricao:
+      'É o faz-tudo, recebe uma quantidade gratificantemente boa de pontos de habilidade que podem ser gastos principalmente, aprendendo sobre empreendedorismo e criando contratos',
+    qtd_pontos: '10 pontos por mês',
+    valor_mensal: 'R$ 3800,00',
+    valor_ponto: 'R$ 380,00',
+  },
+  {
+    nome: 'Pacote Ladino',
+    descricao:
+      'É furtivo, mas está sempre ali para ser útil, ninguém vê o seu impacto, mas é de extrema importâcia para o grupo',
+    qtd_pontos: '12 pontos por mês',
+    valor_mensal: 'R$ 4500,00',
+    valor_ponto: 'R$ 3375,00',
+  },
+  {
+    nome: 'Pacote Clérigo',
+    descricao: 'Um pacote tão fraco quanto um bardo lutando contra um dragão',
+    qtd_pontos: '15 pontos por mês',
+    valor_mensal: 'R$ 5550,00',
+    valor_ponto: 'R$ 370,00',
+  },
+  {
+    nome: 'Pacote Bárbaro',
+    descricao:
+      'Esse é o pacote especial, ele chega chutando portas, arrebentando correntes e sem pensar nas consequências. Apenas é contratado sob demanda e acima de 15 pontos',
+    qtd_pontos: 'Mais de 15 pontos por mês',
+    valor_mensal: 'R$ 5550,00',
+    valor_ponto: 'R$ 370,00',
+  },
 ];
 const Planos = () => {
   const DefinirPacote = nomePacote => {
-    alert(`você acabou de assinar ${nomePacote}`);
+    alert(`você acabou de assinar o ${nomePacote}`);
+    window.location = '/blog';
   };
 
   return (
@@ -68,13 +108,17 @@ const Planos = () => {
                 <p style={{ color: '#aaa', padding: '5px 0px 0px 0px' }}>
                   Quantidade de pontos
                 </p>{' '}
-                {item.qtd_pontos}
+                <p style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                  {item.qtd_pontos}
+                </p>
               </Item>
               <Item>
                 <p style={{ color: '#aaa', padding: '5px 0px 0px 0px' }}>
                   Valor Unitário dos pontos
                 </p>{' '}
-                {item.valor_ponto}
+                <p style={{ fontSize: '20px', fontWeight: 'bold' }}>
+                  {item.valor_ponto}
+                </p>
               </Item>
               <Button onClick={() => DefinirPacote(item.nome)}>
                 Assine já!

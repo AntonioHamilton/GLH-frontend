@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 30px;
+  background: #d8d8d8;
 `;
 
 export const Text = styled.h1`
   margin-bottom: 20px;
   text-align: center;
+  padding: 0px 600px;
 `;
 
 export const Card = styled.div`
@@ -14,6 +16,7 @@ export const Card = styled.div`
   background: #1e1e1e;
   border-radius: 20px;
   padding: 0px 0px;
+  box-shadow: 3px 3px 1px #000;
 `;
 export const Name = styled.h2`
   padding: 20px 0px;
@@ -24,12 +27,16 @@ export const Description = styled.h3`
   padding: 30px;
 `;
 
-export const Item = styled.p``;
+export const Item = styled.p`
+  margin-bottom: 20px;
+`;
 export const WrapCard = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 20%);
   justify-content: center;
   text-align: center;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
 `;
 
 export const Price = styled.h2`
