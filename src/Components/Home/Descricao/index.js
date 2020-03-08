@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { IconContext } from 'react-icons';
-import { GiArcheryTarget } from 'react-icons/gi';
-
+import { AiOutlineSafety } from 'react-icons/ai';
+import { TiGroupOutline } from 'react-icons/ti';
+import { IoIosLeaf, IoIosRocket } from 'react-icons/io';
 import {
   Container,
   TitleContainer,
@@ -21,16 +22,16 @@ const Descricao = () => {
       <WrapContent>
         <TitleContainer>Sobre nós</TitleContainer>
         <DescriptionContainer>
-          The purpose of lorem ipsum is to create a natural looking block of
-          text (sentence, paragraph, page, etc.) that doesn't distract from the
-          layout. A practice not without controversy, laying out pages with
-          meaningless filler text can be very useful when the focus is meant to
-          be on design, not content. The passage experienced a surge in
-          popularity during the 1960s when Letraset used it on their
-          dry-transfer sheets, and again during the 90s as desktop publishers
-          bundled the text with their software. Today it's seen all around the
-          web; on templates, websites, and stock designs. Use our generator to
-          get your own, or read on for the authoritative history of lorem ipsum.
+        Uma plataforma de orientação jurídica para StartUP, 
+        onde você encontra tudo sobre a área jurídica da sua StartUP, 
+        desde da fase de ideação até a tração, com planos gratuitos
+        para StartUP em fase de ideação.
+        Uma plataforma de orientação jurídica onde você encontra
+        tranquilidade para a sua ideia de negócio e segurança 
+        para o crescimento da sua startup. 
+
+        Tranquilidade para começar, segurança para crescer!
+
         </DescriptionContainer>
       </WrapContent>
       <WrapCards>
@@ -43,10 +44,10 @@ const Descricao = () => {
             }}
           >
             <Icon>
-              <GiArcheryTarget />
+              <AiOutlineSafety />
             </Icon>
           </IconContext.Provider>
-          <Title>teste</Title>
+          <Title>Segurança</Title>
           <Description>teste</Description>
         </Card>
         <Card>
@@ -58,10 +59,10 @@ const Descricao = () => {
             }}
           >
             <Icon>
-              <GiArcheryTarget />
+              <TiGroupOutline/>
             </Icon>
           </IconContext.Provider>
-          <Title>teste</Title>
+          <Title>Sinergia</Title>
           <Description>
             The purpose of lorem ipsum is to create a natural looking block of
             text (sentence, paragraph, page, etc.) that doesn't distract from
@@ -77,10 +78,10 @@ const Descricao = () => {
             }}
           >
             <Icon>
-              <GiArcheryTarget />
+              <IoIosLeaf />
             </Icon>
           </IconContext.Provider>
-          <Title>teste</Title>
+          <Title>Simplicidade</Title>
           <Description>teste</Description>
         </Card>
         <Card>
@@ -92,10 +93,10 @@ const Descricao = () => {
             }}
           >
             <Icon>
-              <GiArcheryTarget />
+              <IoIosRocket />
             </Icon>
           </IconContext.Provider>
-          <Title>teste</Title>
+          <Title>Inovação</Title>
           <Description>teste</Description>
         </Card>
       </WrapCards>
