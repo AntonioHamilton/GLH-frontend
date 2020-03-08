@@ -17,6 +17,7 @@ export const DivText = styled.div`
 `;
 
 export const Text = styled.a`
+  text-decoration: none;
   font-weight: bold;
   color: #000;
   background-color: #fff;
@@ -41,7 +42,6 @@ export const Divisor = styled.h2`
   text-align: center;
 `;
 export const Logo = styled.img`
-  width: 100px;
   height: 75px;
   margin-left: 150px;
 `;

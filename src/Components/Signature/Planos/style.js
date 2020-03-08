@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Text = styled.h1`
   margin-bottom: 20px;
   text-align: center;
-  padding: 0px 600px;
+  padding: 0px 28vw;
 `;
 
 export const Card = styled.div`
@@ -32,7 +32,7 @@ export const Item = styled.p`
 `;
 export const WrapCard = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 20%);
+  grid-template-columns: repeat(3, 25%);
   justify-content: center;
   text-align: center;
   grid-column-gap: 50px;
