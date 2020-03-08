@@ -9,6 +9,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
 `;
 
 export const Colaboradores = styled.div`
@@ -20,5 +21,5 @@ export const Colaboradores = styled.div`
 
 export const Colaborador = styled.img`
 justify-content: center;
-  
+border-radius: 6px;
 `;
