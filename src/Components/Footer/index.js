@@ -1,5 +1,5 @@
 import React from 'react';
-import Judistart from '../../Assets/home/menu/judistart.png';
+import Judistart from '../../assets/home/menu/judistart.png';
 import {
   Container,
   WrapContent,

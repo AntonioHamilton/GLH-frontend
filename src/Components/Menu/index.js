@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Text, DivText, Logo, Link } from './style';
-import Judistart from '../../Assets/home/menu/judistart.png';
+import Judistart from '../../assets/home/menu/judistart.png';
 
 const Menu = () => {
   return (
