@@ -33,7 +33,9 @@ const dadosPlano = [
   {
     nome: 'Plano para Startups na fase de Operação',
     descricao: [
-      'Já conseguiu lançar seu MVP? Mas quer continuar crescendo de forma segura? Assina nosso plano para obter consultoria recorrente, além disso você terá alguns pontos para comprar nossos serviços!',
+      'Benefícios anteriores +',
+      '4H Assessoria Jurídica & Consultoria Jurídica',
+      'Orientação para registro de software  INPI',
     ],
     qtd_pontos: '4 pontos por mês',
     valor_mensal: 'R$ 1200,00',
@@ -42,7 +44,10 @@ const dadosPlano = [
   {
     nome: 'Pacote Planos para Startups na fase de Tração',
     descricao: [
-      'É o faz-tudo, recebe uma quantidade gratificantemente boa de pontos de habilidade que podem ser gastos principalmente, aprendendo sobre empreendedorismo e criando contratos',
+      'Benefícios anteriores +',
+      '12H Assessoria & Consultoria Jurídica',
+      '5 Contratos personalizados',
+      'Orientação sobre participação em editais de fomento e incentivos',
     ],
     qtd_pontos: '10 pontos por mês',
     valor_mensal: 'R$ 3000,00',
