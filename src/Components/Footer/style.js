@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: linear-gradient(to top, #000, #333);
+  background: #000;
 `;
 
 export const WrapContent = styled.div`
