@@ -16,6 +16,10 @@ export const Cards = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 20%);
   justify-content: center;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(1, 100%);
+  }
 `;
 
 export const Card = styled.div`

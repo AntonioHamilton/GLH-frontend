@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #B22222;
+  background: #b22222;
   padding: 50px 0px;
   color: #000;
 `;
@@ -16,9 +16,14 @@ export const Colaboradores = styled.div`
   grid-template-columns: repeat(3, 21%);
   justify-content: center;
   margin-left: 20px;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(1, 90%);
+    justify-items: center;
+    grid-row-gap: 10px;
+  }
 `;
 
 export const Colaborador = styled.img`
-justify-content: center;
-  
+  justify-content: center;
 `;
