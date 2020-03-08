@@ -10,12 +10,13 @@ let infoPontos = [
     servico: '• Reuniões presenciais',
   },
   {
-    qtd_pontos: '2 a 5',
+    qtd_pontos: '2 a 5 pontos',
     servico: 'Revisão de material publicitário (folders, vídeos, etc...)',
   },
   {
     qtd_pontos: '4 a 8 pontos',
-    servico: 'Revisão (contrato elaborado pela outra parte, apenas para revisão dosaspectos legais)',
+    servico:
+      'Revisão (contrato elaborado pela outra parte, apenas para revisão dosaspectos legais)',
   },
   {
     qtd_pontos: '6 a 8 pontos',
@@ -31,7 +32,8 @@ let infoPontos = [
   },
   {
     qtd_pontos: '12 pontos',
-    servico: 'Aprovação de Promoções Comerciais e Concursos na CEF (elaboração de Regulamento e todos os documentos)',
+    servico:
+      'Aprovação de Promoções Comerciais e Concursos na CEF (elaboração de Regulamento e todos os documentos)',
   },
   {
     qtd_pontos: '13 a 20 pontos',
