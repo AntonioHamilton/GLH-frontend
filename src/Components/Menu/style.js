@@ -12,20 +12,29 @@ export const Container = styled.div`
 export const DivText = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 `;
 
-export const Text = styled.h2`
+export const Text = styled.a`
+  font-weight: bold;
   color: #000;
   background-color: #fff;
-  margin: 20px;
+  height: 100%;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  border-radius:2px;
+  border-radius: 2px;
+  transition: 0.2s all;
   :hover {
     background: #000;
-		color: #fff;
-		cursor: pointer;
-	}
+    color: #fff;
+    cursor: pointer;
+  }
 `;
+export const Link = styled.a``;
+
 export const Divisor = styled.h2`
   margin: 20px;
   text-align: center;

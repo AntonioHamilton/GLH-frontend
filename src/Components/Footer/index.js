@@ -40,7 +40,7 @@ const Footer = () => {
           <Item>TESTE</Item>
         </Content>
       </WrapContent>
-      <Copy>2020 &copy; Todos os direitos reservados para Legal.UP</Copy>
+      <Copy>2020 &copy; Todos os direitos reservados para JUDISTART</Copy>
     </Container>
   );
 };

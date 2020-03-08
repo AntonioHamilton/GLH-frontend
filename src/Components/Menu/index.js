@@ -1,18 +1,24 @@
 import React from 'react';
-import { Container, Text, DivText, Logo, Divisor } from './style';
+import { Container, Text, DivText, Logo, Link } from './style';
 
 const Menu = () => {
-  return(
-  <Container>
-    <Logo src={"http://legalmarketing.co.il/wp-content/uploads/2017/05/logo-final.jpg"}/>
-    <DivText>
-      <Text>  Cadastre-se  </Text>
-      <Divisor>|</Divisor>
-      <Text>  Blog  </Text>
-      <Text>  Login  </Text>
-    </DivText>
-  </Container>
-  )
+  return (
+    <Container>
+      <Link href="/">
+        <Logo
+          src={
+            'http://legalmarketing.co.il/wp-content/uploads/2017/05/logo-final.jpg'
+          }
+        />
+      </Link>
+      <DivText>
+        <Text href="/">Home</Text>
+        <Text href="/blog"> Blog </Text>
+        <Text> Cadastre-se </Text>
+        <Text> Login </Text>
+      </DivText>
+    </Container>
+  );
 };
 
 export default Menu;
