@@ -26,9 +26,7 @@ const Footer = () => {
           <Item>TESTE</Item>
         </Content>
         <Content>
-          <TituloItem style={{ marginBottom: '30px', marginTop: '86px' }}>
-            Novidades
-          </TituloItem>
+          <TituloItem style={{ marginBottom: '30px' }}>Novidades</TituloItem>
           <ContentMiddle>
             <ItemMiddle>TESTE</ItemMiddle>
             <ItemMiddle>TESTE</ItemMiddle>
@@ -36,15 +34,13 @@ const Footer = () => {
           </ContentMiddle>
         </Content>
         <Content>
-          <TituloItem style={{ marginBottom: '30px', marginTop: '86px' }}>
-            Testes
-          </TituloItem>
+          <TituloItem style={{ marginBottom: '18px' }}>Testes</TituloItem>
           <Item>TESTE</Item>
           <Item>TESTE</Item>
           <Item>TESTE</Item>
         </Content>
       </WrapContent>
-      <Copy>2020 &copy; Todos os direitos reservados para Legal.Up</Copy>
+      <Copy>2020 &copy; Todos os direitos reservados para Legal.UP</Copy>
     </Container>
   );
 };

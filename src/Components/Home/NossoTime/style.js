@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  background: #1e1e1e;
+  padding: 20px 0px;
+  color: white;
+`;
 
 export const Title = styled.h1``;
 
-export const Description = styled.p``;
+export const Description = styled.p`
+  text-align: justify;
+`;
 
 export const Cards = styled.div`
   display: grid;
@@ -41,11 +47,12 @@ export const WrapContent = styled.div`
   top: -60px;
   z-index: 1;
   width: 250px;
+  color: #000;
 `;
 
 export const WrapInfo = styled.div`
   display: flex;
-  margin: 20px 10.5vw;
+  margin: 0px 10vw 20px;
   flex-direction: column;
 `;
 
