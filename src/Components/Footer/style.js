@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #000;
+  background: #fff;
 `;
 
 export const WrapContent = styled.div`
@@ -20,11 +20,11 @@ export const Content = styled.div`
 `;
 
 export const Item = styled.li`
-  color: white;
+  color: #000;
 `;
 
 export const TituloItem = styled.h1`
-  color: white;
+  color: #000;
   font-weight: bolder;
 `;
 
@@ -36,7 +36,7 @@ export const ContentMiddle = styled.div`
 `;
 
 export const Copy = styled.p`
-  color: white;
+  color: #000;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -48,7 +48,7 @@ export const Image = styled.img`
 
 export const ItemMiddle = styled.li`
   list-style-type: square;
-  color: white;
+  color: #000;
   left: 0;
   position: relative;
   transition: all 0.5s;
