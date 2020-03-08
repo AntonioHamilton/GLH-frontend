@@ -20,24 +20,30 @@ import {
 const dadosPlano = [
   {
     nome: 'Plano para Startups na fase de Ideação',
-    descricao:
-      'Plano para as Startups que estão apenas com a ideia, onde não tem nada definido e 	ainda não conseguiu  Gratuito.',
+    descricao: [
+      'Conteúdos sobre orientação jurídica',
+      'Tutorial sobre como abrir uma empresa',
+      'Tutorial sobre como registrar marca',
+      'Modelos de Contratos',
+    ],
     qtd_pontos: 'Sem pontos',
     valor_mensal: 'Gratuito',
     valor_ponto: 'Gratuito',
   },
   {
     nome: 'Plano para Startups na fase de Operação',
-    descricao:
+    descricao: [
       'Já conseguiu lançar seu MVP? Mas quer continuar crescendo de forma segura? Assina nosso plano para obter consultoria recorrente, além disso você terá alguns pontos para comprar nossos serviços!',
+    ],
     qtd_pontos: '4 pontos por mês',
     valor_mensal: 'R$ 1200,00',
     valor_ponto: 'R$ 300,00',
   },
   {
     nome: 'Pacote Planos para Startups na fase de Tração',
-    descricao:
+    descricao: [
       'É o faz-tudo, recebe uma quantidade gratificantemente boa de pontos de habilidade que podem ser gastos principalmente, aprendendo sobre empreendedorismo e criando contratos',
+    ],
     qtd_pontos: '10 pontos por mês',
     valor_mensal: 'R$ 3000,00',
     valor_ponto: 'R$ 300,00',
@@ -91,7 +97,11 @@ const Planos = () => {
                   ou {money_type} {year} / ano
                 </Year>
               </Price>
-              <Description>{item.descricao}</Description>
+              <Description>
+                {item.descricao.map((item, index) => (
+                  <li style={{ margin: '10px 0px' }}>{item}</li>
+                ))}
+              </Description>
               <Item>
                 <p style={{ color: '#aaa', padding: '5px 0px 0px 0px' }}>
                   Quantidade de pontos

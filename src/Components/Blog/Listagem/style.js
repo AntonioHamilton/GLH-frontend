@@ -38,6 +38,7 @@ export const Card = styled.div`
   }
   @media (max-width: 900px) {
     width: 80vw;
+    height: auto;
     display: flex;
     justify-self: center;
     justify-content: center;
@@ -47,11 +48,17 @@ export const Card = styled.div`
 export const Title = styled.h1`
   position: relative;
   z-index: 1;
+  @media (max-width: 1300px) {
+    margin-top: 10px;
+  }
 `;
 export const Description = styled.div`
   display: flex;
   position: relative;
   z-index: 1;
+  @media (max-width: 1300px) {
+    margin-top: 10px;
+  }
 `;
 export const Image = styled.img`
   width: inherit;
@@ -60,11 +67,23 @@ export const Image = styled.img`
   z-index: 0;
   top: 40px;
   left: -3px;
+  @media (max-width: 1300px) {
+    width: 150px;
+    height: 150px;
+    /* position: relative; */
+    right: 40px;
+    top: auto;
+    left: auto;
+  }
 `;
 export const Classificacao = styled.p`
   position: absolute;
   bottom: 30px;
   z-index: 1;
+  @media (max-width: 1300px) {
+    position: unset;
+    margin-top: 10px;
+  }
 `;
 
 export const Link = styled.a`
@@ -79,18 +98,38 @@ export const CardUltimo = styled.div`
   border-radius: 5em;
   padding: 20px;
   color: black;
+  @media (max-width: 1300px) {
+    border-radius: 10px;
+  }
 `;
-export const TitleUltimo = styled.h1``;
+export const TitleUltimo = styled.h1`
+  @media (max-width: 1300px) {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+  }
+`;
 export const DescriptionUltimo = styled.h2`
   display: flex;
   justify-content: center;
   font-size: 20px;
   font-weight: 500;
+  @media (max-width: 1300px) {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+  }
 `;
 export const ImageUltimo = styled.img`
   width: 30vw;
 `;
-export const ClassificacaoUltimo = styled.p``;
+export const ClassificacaoUltimo = styled.p`
+  @media (max-width: 1300px) {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+  }
+`;
 export const AuthorUltimo = styled.p`
   font-weight: bolder;
 `;

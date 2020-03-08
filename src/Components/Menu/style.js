@@ -1,5 +1,28 @@
 import styled from 'styled-components';
 
+export const HamburgerStyle = styled.div`
+  display: none;
+  position: absolute;
+  top: 29px;
+  left: 4px;
+  @media (max-width: 1000px) {
+    display: flex;
+    z-index: 1000;
+    top: 13px;
+    left: 46px;
+  }
+`;
+
+/*export const CloseButton = styled.a`
+  display: none;
+  @media (max-width: 1000px) {
+    display: ${props => (props.active ? 'flex' : 'none')};
+    position: fixed;
+    left: 42px;
+    top: 0px;
+  }
+`;*/
+
 export const Container = styled.div`
   z-index: 3;
   position: sticky;
@@ -19,7 +42,12 @@ export const DivText = styled.div`
   align-items: center;
   margin-right: 150px;
   @media (max-width: 1000px) {
-    display: none;
+    height: 100vh;
+    display: ${props => (props.active ? 'flex' : 'none')};
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: ${props => (props.active ? 0 : '-500px')};
   }
 `;
 
@@ -54,5 +82,9 @@ export const Logo = styled.img`
   margin-left: 150px;
   @media (max-width: 1000px) {
     margin: 0;
+  }
+  @media (max-width: 350px) {
+    position: relative;
+    left: 17px;
   }
 `;

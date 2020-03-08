@@ -13,6 +13,9 @@ export const WrapInfo = styled.div`
   padding: 0px 3vw;
   justify-content: center;
   text-align: center;
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(1, 90%);
+  }
 `;
 
 export const Servico = styled.p`

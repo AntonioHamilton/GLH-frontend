@@ -6,6 +6,10 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  @media (max-width: 1300px) {
+    height: auto;
+    padding: 30px 0px;
+  }
 `;
 
 export const WrapContainer = styled.div`
@@ -15,6 +19,10 @@ export const WrapContainer = styled.div`
   background: #aaa;
   justify-content: center;
   text-align: center;
+  @media (max-width: 1300px) {
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(1, 80vw);
+  }
 `;
 
 export const WrapService = styled.div`
@@ -55,6 +63,11 @@ export const WrapContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  input {
+    @media (max-width: 1300px) {
+      width: 80vw !important;
+    }
+  }
 `;
 
 export const Microservices = styled.datalist``;
@@ -67,6 +80,11 @@ export const CloseButton = styled.img`
   position: absolute;
   right: 70px;
   top: 30px;
+  @media (max-width: 1300px) {
+    width: 20px;
+    height: 20px;
+    right: 20px;
+  }
 `;
 
 export const WrapInput = styled.div`

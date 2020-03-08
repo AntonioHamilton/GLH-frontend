@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: #fff;
   color: #000;
+  .nav {
+    z-index: 1;
+  }
 `;
 
 export const Image = styled.div`

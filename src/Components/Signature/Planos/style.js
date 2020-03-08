@@ -9,6 +9,10 @@ export const Text = styled.h1`
   margin-bottom: 20px;
   text-align: center;
   padding: 0px 28vw;
+  @media (max-width: 1300px) {
+    padding: 0;
+    font-size: 23px;
+  }
 `;
 
 export const Card = styled.div`
@@ -37,6 +41,9 @@ export const WrapCard = styled.div`
   text-align: center;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(1, 90vw);
+  }
 `;
 
 export const Price = styled.h2`
@@ -49,6 +56,9 @@ export const Integer = styled.p`
   font-size: 50px;
   position: relative;
   bottom: -12px;
+  @media (max-width: 1300px) {
+    bottom: 26px;
+  }
 `;
 
 export const MoneyType = styled.p`
