@@ -1,14 +1,13 @@
 import React from 'react';
 import { Container, Text, DivText, Logo, Link } from './style';
+import Judistart from '../../assets/home/menu/judistart.png';
 
 const Menu = () => {
   return (
     <Container>
       <Link href="/">
         <Logo
-          src={
-            'http://legalmarketing.co.il/wp-content/uploads/2017/05/logo-final.jpg'
-          }
+          src={Judistart}
         />
       </Link>
       <DivText>
