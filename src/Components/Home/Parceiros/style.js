@@ -22,6 +22,7 @@ export const Colaboradores = styled.div`
     grid-template-columns: repeat(1, 90%);
     justify-items: center;
     grid-row-gap: 10px;
+    margin-left: 0;
   }
 `;
 

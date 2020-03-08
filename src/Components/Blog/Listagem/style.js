@@ -14,6 +14,13 @@ export const Lista = styled.div`
   grid-row-gap: 20px;
   justify-content: center;
   padding: 40px 0px;
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(2, 30%);
+  }
+  @media (max-width: 900px) {
+    justify-items: center;
+    grid-template-columns: repeat(1, 90%);
+  }
 `;
 export const Card = styled.div`
   width: 100%;
@@ -28,6 +35,13 @@ export const Card = styled.div`
   :hover {
     top: -4px;
     cursor: pointer;
+  }
+  @media (max-width: 900px) {
+    width: 80vw;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    flex-direction: column;
   }
 `;
 export const Title = styled.h1`

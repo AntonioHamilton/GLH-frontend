@@ -9,6 +9,9 @@ export const Image = styled.div`
   width: 100vw;
   height: 90vh;
   background-image: no-repeat center center fixed cover;
+  @media (max-width: 1000px) {
+    height: 30vh;
+  }
 `;
 
 export const WrapContent = styled.div`
@@ -21,6 +24,9 @@ export const WrapContent = styled.div`
   position: relative;
   left: -10px;
   background: rgba(0, 0, 0, 0.5);
+  @media (max-width: 1000px) {
+    padding: 0px 40px;
+  }
 `;
 
 export const SlideText = styled.span`
@@ -31,6 +37,9 @@ export const SlideText = styled.span`
 
 export const SlideDescription = styled.span`
   color: white;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const WrapSlide = styled.div``;

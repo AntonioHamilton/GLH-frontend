@@ -10,6 +10,9 @@ export const WrapContent = styled.div`
   margin-bottom: 20px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(1, 100%);
+  }
 `;
 
 export const Content = styled.div`

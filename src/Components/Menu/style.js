@@ -7,6 +7,10 @@ export const Container = styled.div`
   height: 75px;
   justify-content: space-between;
   display: flex;
+  @media (max-width: 1000px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const DivText = styled.div`
@@ -14,6 +18,9 @@ export const DivText = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 150px;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const Text = styled.a`
@@ -45,4 +52,7 @@ export const Logo = styled.img`
   height: 50px;
   margin-top: 15px;
   margin-left: 150px;
+  @media (max-width: 1000px) {
+    margin: 0;
+  }
 `;

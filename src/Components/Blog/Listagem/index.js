@@ -23,7 +23,7 @@ const dadosblog = [
     nome: 'Aprenda como criar a patente de sua Startup, de maneira gratuita',
     autor: 'Antonio',
     data: '29/03/2020',
-    foco: 'Ideização',
+    foco: 'Ideação',
     image: 'https://otaostartups.com/wp-content/uploads/2019/10/startup.png',
   },
   {
@@ -45,7 +45,7 @@ const dadosblog = [
     nome: 'Já tem um MVP? Esta postagem é para você!',
     autor: 'Laís',
     data: '29/03/2020',
-    foco: 'Ideização',
+    foco: 'Ideação',
     image:
       'https://i0.wp.com/www.azotech.com.br/wp-content/uploads/revslider/startup_home/startup-rocket.png?ssl=1',
   },
