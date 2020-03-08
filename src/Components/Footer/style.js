@@ -43,7 +43,7 @@ export const Copy = styled.p`
 `;
 
 export const Image = styled.img`
-  width: 100px;
+  width: 180px;
 `;
 
 export const ItemMiddle = styled.li`

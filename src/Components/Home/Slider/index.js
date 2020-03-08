@@ -3,9 +3,8 @@ import 'react-awesome-slider/dist/styles.css';
 import React from 'react';
 import { Container, Image } from './style';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';//passar o slide sozinho
+import image1 from '../../../assets/home/slider/image1.png';
 const AutoplaySlider = withAutoplay(AwesomeSlider);
-import { Slide } from 'react-slideshow-image';
-import image1 from '../../../assets/home/slider/image1.png'
 
 const Slider = () => {
   return (

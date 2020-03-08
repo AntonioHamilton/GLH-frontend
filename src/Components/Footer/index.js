@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Judistart from '../../assets/home/menu/judistart.png';
 import {
   Container,
   WrapContent,
@@ -18,7 +18,7 @@ const Footer = () => {
       <WrapContent>
         <Content>
           <Image
-            src="https://image.flaticon.com/icons/png/512/20/20385.png"
+            src={Judistart}
             style={{ marginBottom: '20px', marginTop: '20px' }}
           />
           <Item>TESTE</Item>
