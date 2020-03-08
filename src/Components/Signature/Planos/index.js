@@ -19,50 +19,28 @@ import {
 
 const dadosPlano = [
   {
-    nome: 'Pacote Bardo',
-    descricao: 'Um pacote tão fraco quanto um bardo lutando contra um dragão',
-    qtd_pontos: '5 pontos por mês',
-    valor_mensal: 'R$ 1950,00',
-    valor_ponto: 'R$ 390,00',
-  },
-  {
-    nome: 'Pacote Camponês',
+    nome: 'Plano para Startups na fase de Ideação',
     descricao:
-      'Pode até parecer um pacote fraco, mas acredite, ele está acima do bardo. Suas principais habilidades são: se esconder de goblins e aprender bastante sobre startups',
-    qtd_pontos: '7 pontos por mês',
-    valor_mensal: 'R$ 2695,00',
-    valor_ponto: 'R$ 385,00',
+      'Plano para as Startups que estão apenas com a ideia, onde não tem nada definido e 	ainda não conseguiu  Gratuito.',
+    qtd_pontos: 'Sem pontos',
+    valor_mensal: 'Gratuito',
+    valor_ponto: 'Gratuito',
   },
   {
-    nome: 'Pacote Mago',
+    nome: 'Plano para Startups na fase de Operação',
+    descricao:
+      'Já conseguiu lançar seu MVP? Mas quer continuar crescendo de forma segura? Assina nosso plano para obter consultoria recorrente, além disso você terá alguns pontos para comprar nossos serviços!',
+    qtd_pontos: '4 pontos por mês',
+    valor_mensal: 'R$ 1200,00',
+    valor_ponto: 'R$ 300,00',
+  },
+  {
+    nome: 'Pacote Planos para Startups na fase de Tração',
     descricao:
       'É o faz-tudo, recebe uma quantidade gratificantemente boa de pontos de habilidade que podem ser gastos principalmente, aprendendo sobre empreendedorismo e criando contratos',
     qtd_pontos: '10 pontos por mês',
-    valor_mensal: 'R$ 3800,00',
-    valor_ponto: 'R$ 380,00',
-  },
-  {
-    nome: 'Pacote Ladino',
-    descricao:
-      'É furtivo, mas está sempre ali para ser útil, ninguém vê o seu impacto, mas é de extrema importâcia para o grupo',
-    qtd_pontos: '12 pontos por mês',
-    valor_mensal: 'R$ 4500,00',
-    valor_ponto: 'R$ 3375,00',
-  },
-  {
-    nome: 'Pacote Clérigo',
-    descricao: 'Um pacote tão fraco quanto um bardo lutando contra um dragão',
-    qtd_pontos: '15 pontos por mês',
-    valor_mensal: 'R$ 5550,00',
-    valor_ponto: 'R$ 370,00',
-  },
-  {
-    nome: 'Pacote Bárbaro',
-    descricao:
-      'Esse é o pacote especial, ele chega chutando portas, arrebentando correntes e sem pensar nas consequências. Apenas é contratado sob demanda e acima de 15 pontos',
-    qtd_pontos: 'Mais de 15 pontos por mês',
-    valor_mensal: 'R$ 5550,00',
-    valor_ponto: 'R$ 370,00',
+    valor_mensal: 'R$ 3000,00',
+    valor_ponto: 'R$ 300,00',
   },
 ];
 const Planos = () => {
@@ -78,18 +56,28 @@ const Planos = () => {
       </Text>
       <WrapCard>
         {dadosPlano.map((item, index) => {
-          let money_type = item.valor_mensal.split(' ')[0];
-          let integer = item.valor_mensal.split(',').join(' ');
-          let integer_price = integer.split(' ')[1];
-          let cents = item.valor_mensal.split(',')[1];
-          let full_price = String(integer_price) + '.' + String(cents);
-          let year = String(parseFloat(full_price) * 12);
-          if (year.indexOf('.') !== -1) {
-            console.log(year);
-            year[year.indexOf('.')] = ',';
+          let money_type, integer, integer_price, cents, full_price, year;
+          if (item.valor_mensal !== 'Gratuito') {
+            money_type = item.valor_mensal.split(' ')[0];
+            integer = item.valor_mensal.split(',').join(' ');
+            integer_price = integer.split(' ')[1];
+            cents = item.valor_mensal.split(',')[1];
+            full_price = String(integer_price) + '.' + String(cents);
+            year = String(parseFloat(full_price) * 12);
+            if (year.indexOf('.') !== -1) {
+              year[year.indexOf('.')] = ',';
+            } else {
+              year = year + ',00';
+            }
           } else {
-            year = year + ',00';
+            money_type = '';
+            integer = '';
+            integer_price = 'Gratuito';
+            cents = '';
+            full_price = 'Gratuito';
+            year = 'Gratuito';
           }
+
           return (
             <Card key={index}>
               <Name>{item.nome}</Name>

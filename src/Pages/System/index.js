@@ -1,9 +1,10 @@
 import React from 'react';
+import Servicos from '../../Components/System/Servicos';
 
 const System = () => {
   return (
     <>
-      <h1>okay</h1>
+      <Servicos />
     </>
   );
 };

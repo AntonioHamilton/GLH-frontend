@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Text, DivText, Logo, Link } from './style';
-import Judistart from '../../Assets/home/menu/judistart.png';
+import Judistart from '../../assets/home/menu/judistart.png';
 
 const Menu = () => {
   return (
@@ -13,7 +13,7 @@ const Menu = () => {
         <Text href="/blog">Blog</Text>
         <Text href="/assinatura">Assine já</Text>
         <Text> Cadastre-se </Text>
-        <Text> Login </Text>
+        <Text href="/sistema"> Login </Text>
       </DivText>
     </Container>
   );
