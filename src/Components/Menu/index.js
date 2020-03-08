@@ -13,7 +13,8 @@ const Menu = () => {
       </Link>
       <DivText>
         <Text href="/">Home</Text>
-        <Text href="/blog"> Blog </Text>
+        <Text href="/blog">Blog</Text>
+        <Text href="/assinatura">Assine já</Text>
         <Text> Cadastre-se </Text>
         <Text> Login </Text>
       </DivText>
