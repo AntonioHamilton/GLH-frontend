@@ -5,18 +5,19 @@ export const Container = styled.div`
   height: 75px;
   justify-content: space-between;
   display: flex;
-  margin-right: 100px;
-  margin-left: 100px;
+  
 `;
 
 export const DivText = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 150px;
+  
 `;
 
-export const Text = styled.a`
-  font-weight: bold;
+export const Text = styled.a`  
+font-weight: bold;
   color: #000;
   background-color: #fff;
   height: 100%;
@@ -42,4 +43,5 @@ export const Divisor = styled.h2`
 export const Logo = styled.img`
   widht: 100px;
   height: 75px;
+  margin-left: 150px;
 `;
