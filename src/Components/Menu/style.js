@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  z-index: 3;
+  position: sticky;
   background: #ffffff;
   height: 75px;
   justify-content: space-between;
   display: flex;
-  
 `;
 
 export const DivText = styled.div`
@@ -16,6 +17,7 @@ export const DivText = styled.div`
 `;
 
 export const Text = styled.a`
+  text-decoration: none;
   font-weight: bold;
   color: #000;
   background-color: #fff;
@@ -40,7 +42,6 @@ export const Divisor = styled.h2`
   text-align: center;
 `;
 export const Logo = styled.img`
-  widht: 100px;
   height: 75px;
   margin-left: 150px;
 `;
