@@ -6,12 +6,6 @@ import Footer from './Components/Footer';
 
 import { GlobalStyle } from './Styles/Global';
 
-<<<<<<< HEAD
-const App = () => (<>
-  <Routes />
-</>
-)
-=======
 const App = () => {
   return (
     <>
@@ -22,6 +16,5 @@ const App = () => {
     </>
   );
 };
->>>>>>> 22388bc08fc1d77968b352abdaefb4df229b6ed6
 
 export default App;
