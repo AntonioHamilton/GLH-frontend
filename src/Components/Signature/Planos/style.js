@@ -62,4 +62,13 @@ export const WrapPrice = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  color: #e84b37;
+`;
+
+export const Button = styled.a`
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #e84b37;
+  border-radius: 5px;
 `;

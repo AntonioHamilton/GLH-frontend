@@ -14,6 +14,7 @@ import {
   Cents,
   Year,
   WrapPrice,
+  Button,
 } from './style';
 
 const dadosPlano = [
@@ -26,6 +27,10 @@ const dadosPlano = [
   },
 ];
 const Planos = () => {
+  const DefinirPacote = nomePacote => {
+    alert(`você acabou de assinar ${nomePacote}`);
+  };
+
   return (
     <Container>
       <Text>
@@ -59,8 +64,21 @@ const Planos = () => {
                 </Year>
               </Price>
               <Description>{item.descricao}</Description>
-              <Item>{item.qtd_pontos}</Item>
-              <Item>{item.valor_ponto}</Item>
+              <Item>
+                <p style={{ color: '#aaa', padding: '5px 0px 0px 0px' }}>
+                  Quantidade de pontos
+                </p>{' '}
+                {item.qtd_pontos}
+              </Item>
+              <Item>
+                <p style={{ color: '#aaa', padding: '5px 0px 0px 0px' }}>
+                  Valor Unitário dos pontos
+                </p>{' '}
+                {item.valor_ponto}
+              </Item>
+              <Button onClick={() => DefinirPacote(item.nome)}>
+                Assine já!
+              </Button>
             </Card>
           );
         })}

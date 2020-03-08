@@ -7,16 +7,16 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-    text-align: center;
+  text-align: center;
 `;
 
-export const Parceiros = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: center;
+export const WrapParceiros = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
 `;
 
 export const Parceiro = styled.img`
-    height: 100px;
-    justify-content: center;
+  height: 100px;
+  justify-content: center;
 `;
